@@ -7,21 +7,27 @@ public class Ejercicio06 {
 	public static void main(String[] args) {
 
 		// Variable que recogera el primer numero.
-		int numA;
+		double numA;
 
 		// Variable que recogera el segundo numero.
-		int numB;
+		double numB;
 
 		// Variable que recogera el tercer numero.
-		int numC;
+		double numC;
 
-		// Variable que recogera el resultado.
-		int resultado;
-
+		// Variables que recogeran el resultado.
+		double partePositiva;
+		
+		double parteNegativa;
+		
+		// Variables para acortar cuentas.
+		double raiz;
+		
+		double parteAbajo;
 		// Creamos un nuevo Scanner.
 		Scanner sc = new Scanner(System.in);
 
-		// Solicitamos al usuario las notas de sus tres trimestres.
+		// Solicitamos al usuario los numeros para la operacion.
 		System.out.println("Introduzca el valor de A:");
 		numA = sc.nextInt();
 
@@ -30,6 +36,28 @@ public class Ejercicio06 {
 
 		System.out.println("Introduzca el valor de C:");
 		numC = sc.nextInt();
+		
+		// Realizamos las operaciones correspondientes
+		parteAbajo = 2 * numA;
+		
+		raiz = numB * numB - 4 * numA * numC;
+		
+		partePositiva = (- numB - Math.abs(Math.sqrt(raiz))) / parteAbajo;
+		
+		parteNegativa = (- numB + Math.abs(Math.sqrt(raiz))) / parteAbajo;
+		
+		// Condicion para q la operacion pueda ser ejecutada.
+		if ( parteAbajo == 0 || raiz < 0 ) {
+			System.out.println("Su ecuacion no tiene solucion.");
+		} else {
+			System.out.println("Las soluciones de su ecuacion es: " );
+			System.out.println("x 1 = " + partePositiva );
+			System.out.println("x 2 = " + parteNegativa);
+		}
+		
+		// Cerramos el Scanner.
+		sc.close();
+		
 
 	}
 
