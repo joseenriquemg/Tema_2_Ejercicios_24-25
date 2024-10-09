@@ -1,14 +1,14 @@
-package parte1_if_else;
+package parte1ifelse;
 
 import java.util.Scanner;
 
-public class Ejercicio04 {
+public class Ejercicio02 {
 
 	public static void main(String[] args) {
-		
+
 		// Variable que recoja el primer numero de usuario.
 		int num1;
-
+		
 		// Variable que recoja el segundo numero de usuario.
 		int num2;
 
@@ -20,20 +20,20 @@ public class Ejercicio04 {
 
 		// Leemos del teclado.
 		num1 = sc.nextInt();
-
+		
 		// Solicitamos el segundo numero al usuario.
 		System.out.println("Introduzca su segundo numero:");
-
+		
 		// Leemos del teclado.
 		num2 = sc.nextInt();
-		
-		// Creamos las condiciones correspondientes.
-		if ( num1 >= num2) {
-			System.out.println("Sus numeros ordenados quedan asi: " + num2 + ", " + num1);
+
+		// Realizamos las condiciones correspondientes.
+		if (num1 == num2) {
+			System.out.println("Sus numeros son iguales.");
 		} else {
-			System.out.println("Sus numeros ordenados quedan asi: " + num1 + ", " + num2);
+			System.out.println("Sus numeros son distintos.");
 		}
-		
+
 		// Cerramos el Scanner.
 		sc.close();
 
