@@ -19,6 +19,7 @@ public class Ejercicio05 {
 		// Leemos del teclado.
 		eleccion = sc.next();
 		
+		// Creamos un switch para recoger las distintas opciones.
 		switch (eleccion) {
 		
 		case "E" -> System.out.println("E: Remolques.");
