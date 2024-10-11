@@ -13,7 +13,7 @@ public class Ejercicio03 {
 		int eleccion;
 		
 		// Variable para recoger la operacion matematica.
-		String letra;
+		String letra = "";
 		
 		// Creamos un nuevo Scanner.
 		Scanner sc = new Scanner ( System.in);
@@ -81,7 +81,7 @@ public class Ejercicio03 {
 		}
 		
 		// Ofrecemos el resultado al usuario.
-		System.out.println("Su DNI con su letra aplicada es: " + numDNI + eleccion );
+		System.out.println("Su DNI con su letra aplicada es: " + numDNI + letra );
 		
 		// Cerramos el nuevo Scanner.
 		sc.close();
