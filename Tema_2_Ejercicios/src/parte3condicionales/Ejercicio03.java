@@ -6,6 +6,13 @@ public class Ejercicio03 {
 
 	public static void main(String[] args) {
 		
+		/*
+		 * Casos de puebas:
+		 * Prueba 1: 29627264 -> Su DNI con su letra aplicada es: 29627264 K
+		 * Prueba 2: 3333333333 -> Su numero no es de un DNI.
+		 */
+			
+		
 		// Creamos una variable para recoger el DNI del usuario.
 		long numDNI;
 		

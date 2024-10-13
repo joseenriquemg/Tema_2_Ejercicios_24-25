@@ -5,6 +5,13 @@ import java.util.Scanner;
 public class Ejercicio04 {
 
 	public static void main(String[] args) {
+		
+		/*
+		 * Caso de pruebas:
+		 * Prueba 1: 56 -> El número en letras es: cincuenta y seis.
+		 * Prueba 2: 12 -> El número en letras es: doce.
+		 * Prueba 3: 20 -> El número en letras es: veinte.
+		 */
 
 		// Creamos una variable para recoger el numero del usuario.
 		int numero;
