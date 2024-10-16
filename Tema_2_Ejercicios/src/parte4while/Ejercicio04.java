@@ -14,9 +14,12 @@ public class Ejercicio04 {
 		
 		// Variable para recoger la suma de los negativos.
 		double sumaNegativos = 0;
+		
+		// Variable para recoger el contador de veces que ejecuto el while.
+		int contador = 1;
 
-		// Variable para recoger el contador de numeros.
-		int contador = 0;
+		// Variable para recoger el contador de ceros.
+		int contadorCeros = 0;
 		
 		// Variable para el contador de numeros negativos.
 		int contadorNegativos = 0;
@@ -28,7 +31,7 @@ public class Ejercicio04 {
 		Scanner sc = new Scanner(System.in);
 
 		// Solicitamos el numero al usuario.
-		System.out.println("Introduzca un numero al que le iremos sumando el resto:");
+		System.out.println("Introduzca hasta 10 numeros:");
 
 		// Leemos del teclado.
 		numero = sc.nextInt();
@@ -48,9 +51,11 @@ public class Ejercicio04 {
 
 			} else {
 				
-				contador ++;
+				contadorCeros ++;
 				
 			}
+			
+			contador ++;
 
 			// Solicitamos el resto de numeros al usuario.
 			System.out.println("Introduzca otro numero:");
@@ -65,7 +70,7 @@ public class Ejercicio04 {
 
 		System.out.println("El resultado de la suma de sus positivos es: " + suma);
 		System.out.println("El resultado de la media de sus negativos es: " + media);
-		System.out.println("El contador de 0 introducidos es: " + contador);
+		System.out.println("El contador de 0 introducidos es: " + contadorCeros);
 
 		// Cerramos el Scanner.
 		sc.close();
