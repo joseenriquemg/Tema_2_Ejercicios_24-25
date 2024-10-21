@@ -10,43 +10,52 @@ public class Ejercicio05 {
 		int numero;
 
 		String respuesta = "";
+		
+		int menorQue = 1;
+		
+		int mayorQue = 101;
 
 		Random rand = new Random();
-
-		
 
 		// Creamos un nuevo Scanner.
 		Scanner sc = new Scanner(System.in);
 
 		do {
+
+			numero = rand.nextInt(menorQue, mayorQue);
 			
-			numero = rand.nextInt(1, 101);
+			if (numero == mayorQue) {
+				
+				numero = mayorQue++;
+				
+			}  
+				
+			if (numero == menorQue) {
+				
+				numero = menorQue++;
+				
+			}
 
 			System.out.println("¿Su numero es el " + numero + "?");
 
 			respuesta = sc.next();
 
-			if (respuesta == "Menor") {
+			if (respuesta.equals("Menor")) {
 
-				numero = rand.nextInt(1, numero);
+				mayorQue = numero;
 
-				System.out.println("¿Su numero es el " + numero + "?");
+			} else if (respuesta.equals("Mayor")) {
 
-				respuesta = sc.next();
-
-			} else if (respuesta == "Mayor") {
-
-				numero = rand.nextInt(numero, 101);
-
-				System.out.println("¿Su numero es el " + numero + "?");
-
-				respuesta = sc.next();
+				menorQue = numero;
 
 			}
+			
 
-		} while (respuesta != "Correcto.");
+		} while (!respuesta.equals("Correcto"));
 
 		System.out.println("¡Acerteee!");
+
+		sc.close();
 
 	}
 
