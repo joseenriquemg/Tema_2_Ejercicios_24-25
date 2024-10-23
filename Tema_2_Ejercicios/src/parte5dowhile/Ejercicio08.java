@@ -103,7 +103,7 @@ public class Ejercicio08 {
 		}
 
 		// Cerramos el Scanner.
-		sc.close();
+		sc.close();		
 
 	}
 
