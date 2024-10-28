@@ -45,6 +45,8 @@ public class Ejercicio02 {
 			}
 			
 		}
+		
+		// Ofrecemos el resultado al usaurio.
 		System.out.println();
 		System.out.println("Hay un total de " + sumaPrimos + " entre tu numero y 1.");
 
