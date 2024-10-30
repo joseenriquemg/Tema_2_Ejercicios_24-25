@@ -13,25 +13,28 @@ public class Ejercicio05 {
 		Scanner sc = new Scanner(System.in);
 
 		do {
-		// Solicitamos el numero al usaurio.
-		System.out.println("Introduzca un numero:");
-		
-		// Leemos del teclado.
-		numero = sc.nextInt();
-		
+			// Solicitamos el numero al usaurio.
+			System.out.println("Introduzca un numero:");
+
+			// Leemos del teclado.
+			numero = sc.nextInt();
+
 		} while (numero < 1);
 		
-		for (int i = 0; i < numero; i++) {
-			
-			for (int j = i; j <= numero; j++) {
-				
-				System.out.print(j);
+		// Primer bucle for para recorrer las filas.
+		for (int i = 1; i <= numero; i++) {
+
+			//Segundo bucle for para recoger las columnas.
+			for (int j = 1; j <= i; j++) {
+
+				System.out.print(i);
+
 			}
-			
+
 			System.out.println();
-			
+
 		}
-		
+
 		// Cerramos el Scanner.
 		sc.close();
 
